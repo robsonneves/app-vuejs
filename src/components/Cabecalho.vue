@@ -26,12 +26,12 @@ Vue.use(MdButton)
 Vue.use(MdContent)
 Vue.use(MdTabs)
 
-export default {
+export default{
   name: 'PaperContent',
-  data : () => {
-      return {
-          color: 'md-accent'
-      }
+  data: () => {
+    return {
+      color: 'md-accent'
+    }
   }
 }
 
