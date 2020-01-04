@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 // import HelloWorld from '@/components/HelloWorld'
 // import Cabecalho from '@/components/Cabecalho'
-import Base from '@/components/Base'
+import Index from '@/components/Index'
 
 Vue.use(Router)
 
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Base',
-      component: Base
+      name: 'Index',
+      component: Index
     }
 
     // {
