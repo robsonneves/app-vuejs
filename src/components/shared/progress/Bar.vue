@@ -1,22 +1,25 @@
 <template>
   <div>
-    <md-progress-bar md-mode="determinate" :md-value="amount"></md-progress-bar>
-    <md-progress-bar class="md-accent" md-mode="determinate" :md-value="amount"></md-progress-bar>
-    <input type="range" v-model.number="amount"> {{ amount }}%
+    <md-badge class="md-primary" md-content=""  v-bind:style="{ 'margin-left': porcent + '%' }" />
+    <md-progress-bar class="md-accent" md-mode="determinate" :md-value="porcent"></md-progress-bar>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ProgressBarDeterminate',
-  data: () => ({
-    amount: 0
-  })
+  props: ['porcent'],
+  name: 'ProgressBarDeterminate'
 }
 </script>
 
 <style scoped>
+  .md-badge {
+    position: relative !important;
+    margin-top: 24px;
+  }
   .md-progress-bar {
-    margin: 24px;
+    margin-top: 1vh;
+    margin-left: 24px;
+    /* margin: 24px;*/
   }
 </style>

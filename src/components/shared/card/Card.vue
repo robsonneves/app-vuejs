@@ -2,8 +2,8 @@
   <md-card md-with-hover v-bind:class="col">
     <md-ripple>
       <md-card-header>
-        <div class="md-title">Orange primary color</div>
-        <div class="md-subhead">With hover and ripple effects</div>
+        <div class="md-title">{{ title }}</div>
+        <div class="md-subhead">{{ subtitle }}</div>
       </md-card-header>
 
       <md-card-content>
@@ -16,7 +16,7 @@
 <script>
 
 export default {
-  props: ['col'],
+  props: ['col', 'title', 'subtitle'],
   name: 'ThemeColors'
 }
 

@@ -17,15 +17,32 @@
     </div>
     <div class="mySecondColumn">
       <md-content>
-        <my-card :col="'colTwo'">
-          <my-progress-bar></my-progress-bar>
+        <my-card :col="'colTwo'" :title="'Formação'">
+          <my-progress-spinner :porcent="100" :infos="['Graduação', 'Sistemas Para Internet', 'Unicesumar']"></my-progress-spinner>
+          <my-progress-spinner :porcent="75" :infos="['Pós-Graduação', 'Engenharia de Software', 'Estácio']"></my-progress-spinner>
         </my-card>
-        <my-card :col="'colTwo'">
-          <my-progress-spinner></my-progress-spinner>
+        <my-card :col="'colTwo'" :title="'Skills'">
+          <my-progress-bar :porcent="35"></my-progress-bar>
+          <my-progress-bar :porcent="80"></my-progress-bar>
+          <my-progress-bar :porcent="70"></my-progress-bar>
         </my-card>
       </md-content>
       <md-content>
-        <my-card :col="'colFour'"></my-card>
+        <my-card :col="'colFour'" :title="'Cursos'">
+          <my-btn> HTML </my-btn>
+          <my-btn :color="'md-primary'"> CSS </my-btn>
+          <my-btn> Java <br> Script </my-btn>
+          <my-btn :color="'md-primary'"> Node <br> Js </my-btn>
+          <my-btn> Java </my-btn>
+          <my-btn :color="'md-primary'"> Angu <br> lar <br> Js </my-btn>
+          <my-btn> Angu <br> lar <br> 2 </my-btn>
+          <my-btn :color="'md-primary'"> VueJs </my-btn>
+          <my-btn> MySql </my-btn>
+          <my-btn :color="'md-primary'"> Word <br> press </my-btn>
+        </my-card>
+      </md-content>
+      <md-content>
+        <my-card :col="'colFour'" :title="'Esperiencias'" :subtitle="'teste'"></my-card>
       </md-content>
       <md-content>
         <my-card :col="'colFour'"></my-card>
@@ -42,6 +59,7 @@ import Title from './shared/texts/Title.vue'
 import TripleLine from './shared/list/TripleLine.vue'
 import ProgressBar from './shared/progress/Bar.vue'
 import ProgressSpinner from './shared/progress/Spinner.vue'
+import Btn from './shared/btn/Buttom.vue'
 
 export default {
   components: {
@@ -50,7 +68,8 @@ export default {
     'my-title': Title,
     'my-triple-line': TripleLine,
     'my-progress-bar': ProgressBar,
-    'my-progress-spinner': ProgressSpinner
+    'my-progress-spinner': ProgressSpinner,
+    'my-btn': Btn
   },
   name: 'Index'
 }
