@@ -42,10 +42,9 @@
         </my-card>
       </md-content>
       <md-content>
-        <my-card :col="'colFour'" :title="'Esperiencias'" :subtitle="'teste'"></my-card>
-      </md-content>
-      <md-content>
-        <my-card :col="'colFour'"></my-card>
+        <my-card :col="'colFour'" :title="'Esperiencias'" :subtitle="'teste'">
+          <my-card-colorful></my-card-colorful>
+        </my-card>
       </md-content>
     </div>
   </div>
@@ -60,6 +59,7 @@ import TripleLine from './shared/list/TripleLine.vue'
 import ProgressBar from './shared/progress/Bar.vue'
 import ProgressSpinner from './shared/progress/Spinner.vue'
 import Btn from './shared/btn/Buttom.vue'
+import CardColorful from './shared/card/CardColorful.vue'
 
 export default {
   components: {
@@ -69,7 +69,8 @@ export default {
     'my-triple-line': TripleLine,
     'my-progress-bar': ProgressBar,
     'my-progress-spinner': ProgressSpinner,
-    'my-btn': Btn
+    'my-btn': Btn,
+    'my-card-colorful': CardColorful
   },
   name: 'Index'
 }
