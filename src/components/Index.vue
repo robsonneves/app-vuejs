@@ -43,7 +43,54 @@
       </md-content>
       <md-content>
         <my-card :col="'colFour'" :title="'Esperiencias'" :subtitle="'teste'">
-          <my-card-colorful></my-card-colorful>
+          <my-card-colorful
+            :color="'primary'"
+            :title="'Nome da Empresa 1'"
+            :descriptionFunction="'Analista Sistemas'"
+            :description="'Descrição da função'"
+            :initialYear="2010"
+            :finalYear="2011">
+          </my-card-colorful>
+          <my-card-colorful
+            :color="'accent'"
+            :title="'Nome da Empresa 2'"
+            :descriptionFunction="'Analista Sistemas'"
+            :description="'Descrição da função Descrição da função Descrição da função Descrição da função Descrição da função Descrição da função Descrição da função'"
+            :initialYear="2010"
+            :finalYear="2011">
+          </my-card-colorful>
+          <my-card-colorful
+            :color="'white'"
+            :title="'Nome da Empresa 3'"
+            :descriptionFunction="'Analista Sistemas'"
+            :description="'Descrição da função'"
+            :initialYear="2010"
+            :finalYear="2011">
+          </my-card-colorful>
+          <my-card-colorful
+            :color="'primary'"
+            :title="'Nome da Empresa 4'"
+            :descriptionFunction="'Analista Sistemas'"
+            :description="'Descrição da função'"
+            :initialYear="2010"
+            :finalYear="2011">
+          </my-card-colorful>
+          <my-card-colorful
+            :color="'white'"
+            :title="'Nome da Empresa 5'"
+            :descriptionFunction="'Analista Sistemas'"
+            :description="'Descrição da função'"
+            :initialYear="2010"
+            :finalYear="2011">
+          </my-card-colorful>
+          <my-card-colorful
+            :color="'orange'"
+            :title="'Nome da Empresa 6'"
+            :descriptionFunction="'Analista Sistemas'"
+            :description="'Descrição da função'"
+            :initialYear="2010"
+            :finalYear="2011">
+          </my-card-colorful>
         </my-card>
       </md-content>
     </div>
